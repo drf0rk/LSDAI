@@ -7,16 +7,18 @@ This directory contains the complete documentation for the LSDAI project, includ
 ## 📁 **Folder Structure**
 
 ```
-documentation/
+Docs/
 ├── README.md                              # This file - documentation overview
-├── core/                                  # Core project documentation
+├── Core/                                  # Core project documentation
 │   ├── 00-History-and-Document-Guide.md   # Complete project history and guide
 │   ├── 01-Project-Context-and-Requirements.md  # Project context and requirements
 │   ├── 02-Repository-Analysis-and-Comparison.md  # Comprehensive analysis
 │   ├── 03-Implementation-Plan-and-Architecture.md  # Implementation roadmap
 │   ├── 04-Original-LSDAI-Notebook.py       # Original LSDAI implementation
-│   └── 04-Comprehensive-Evolution-Analysis.md  # Complete evolution tracing with debugging reference
-├── widget-builder/                         # Complete Widget Builder system
+│   ├── 04-Comprehensive-Evolution-Analysis.md  # Complete evolution tracing with debugging reference
+│   ├── AI-System-Prompt.md                # Full AI system prompt with navigation dictionary
+│   └── AI-System-Prompt-Compact.md       # Compact AI navigation prompt
+├── Widget-builder/                         # Complete Widget Builder system
 │   ├── 05-Widget-Builder-Implementation-Plan.md  # Technical blueprint
 │   ├── 06-Widget-Builder-Application.py        # Main GUI application
 │   ├── 06-Widget-Builder-Implementation.py     # Core implementation
@@ -24,14 +26,13 @@ documentation/
 │   ├── 08-Widget-Builder-Examples.py           # Usage examples
 │   ├── 08-Widget-Builder-Demo-Notebook.ipynb   # Interactive demo
 │   └── 09-Widget-Builder-Integration-Guide.md  # Integration guide
-├── implementation/                         # Implementation files and scripts
+├── Implementation/                         # Implementation files and scripts
 │   ├── rewrite-plan.md                       # LSDAI rewrite plan
 │   ├── next-steps-prompt.md                  # Next steps and execution
 │   ├── docs-analysis.md                      # Repository analysis
 │   ├── TESTING_PLAN.md                       # Testing strategy
-│   ├── AI-Session-Handover-Document.md       # Session context
-│   └── LSDAI-Simplified/                    # Complete LSDAI implementation
-├── reference/                              # Original reference materials
+│   └── AI-Session-Handover-Document.md       # Session context
+├── Reference/                              # Original reference materials
 │   └── lsdai_z_ai (1).py                    # Original LSDAI notebook
 └── guides/                                 # Additional guides (empty - ready for future)
 ```
@@ -48,7 +49,7 @@ A streamlined, multi-WebUI launcher that combines the best features of LSDAI wit
 - Multiple installation approaches
 - Simplified configuration management
 
-**Location:** `documentation/implementation/LSDAI-Simplified/`
+**Location**: `LSDAI-Simplified/` (at repository root level, not in Docs)
 
 ### **2. Widget Builder System**
 A complete "Photoshop for Custom GUI" application that allows visual creation of Jupyter notebook interfaces.
@@ -60,7 +61,7 @@ A complete "Photoshop for Custom GUI" application that allows visual creation of
 - Multi-format export (ipywidgets, HTML/CSS/JS, LLM instructions)
 - Jupyter notebook integration
 
-**Location:** `documentation/widget-builder/`
+**Location**: `Docs/Widget-builder/`
 
 ## 📖 **Getting Started**
 
@@ -68,7 +69,7 @@ A complete "Photoshop for Custom GUI" application that allows visual creation of
 
 1. **Start with the core documentation:**
    ```
-   documentation/core/00-History-and-Document-Guide.md
+   Docs/Core/00-History-and-Document-Guide.md
    ```
 
 2. **Read in order:**
@@ -78,29 +79,30 @@ A complete "Photoshop for Custom GUI" application that allows visual creation of
    - `03-Implementation-Plan-and-Architecture.md` - Implementation details
    - `04-Original-LSDAI-Notebook.py` - Original reference
    - `04-Comprehensive-Evolution-Analysis.md` - Complete evolution tracing and debugging reference
+   - `AI-System-Prompt.md` - Full AI navigation system
 
 ### **For Widget Builder Users**
 
 1. **Start with the user guide:**
    ```
-   documentation/widget-builder/07-Widget-Builder-User-Guide.md
+   Docs/Widget-builder/07-Widget-Builder-User-Guide.md
    ```
 
 2. **Try the interactive demo:**
    ```
-   documentation/widget-builder/08-Widget-Builder-Demo-Notebook.ipynb
+   Docs/Widget-builder/08-Widget-Builder-Demo-Notebook.ipynb
    ```
 
 ### **For Implementation**
 
 1. **Review the implementation plan:**
    ```
-   documentation/implementation/rewrite-plan.md
+   Docs/Implementation/rewrite-plan.md
    ```
 
 2. **Access the complete implementation:**
    ```
-   documentation/implementation/LSDAI-Simplified/
+   LSDAI-Simplified/ (at repository root)
    ```
 
 ## 🔍 **Document Summaries**
@@ -113,6 +115,8 @@ A complete "Photoshop for Custom GUI" application that allows visual creation of
 - **`03-Implementation-Plan-and-Architecture.md`**: Technical implementation roadmap (largely completed)
 - **`04-Original-LSDAI-Notebook.py`**: Original complex LSDAI implementation for reference
 - **`04-Comprehensive-Evolution-Analysis.md`**: Complete evolution tracing from sdAIgen → old LSDAI → current LSDAI with spiderweb mind map and debugging reference
+- **`AI-System-Prompt.md`**: Complete AI system prompt with navigation dictionary and keyword triggers
+- **`AI-System-Prompt-Compact.md`**: Compact, low-token-count version of AI system prompt
 
 ### **Widget Builder Documentation**
 
@@ -131,7 +135,6 @@ A complete "Photoshop for Custom GUI" application that allows visual creation of
 - **`docs-analysis.md`**: Comprehensive repository analysis
 - **`TESTING_PLAN.md`**: Testing strategy and procedures
 - **`AI-Session-Handover-Document.md`**: Complete session context transfer
-- **`LSDAI-Simplified/`**: Complete working implementation
 
 ## ✅ **Project Status**
 
@@ -157,6 +160,15 @@ The project is now complete and ready for:
 3. **Community Sharing**: Distribution of Widget Builder capabilities
 4. **Future Enhancements**: Based on user feedback and usage patterns
 
+## 🤖 **AI Assistant Setup**
+
+For AI assistants working on this project, use the system prompts in `Docs/Core/`:
+
+- **`AI-System-Prompt.md`**: Complete navigation and reference system
+- **`AI-System-Prompt-Compact.md`**: Compact version for token-constrained environments
+
+These prompts provide comprehensive guidance for navigating the documentation, debugging issues, and understanding the project's evolution from sdAIgen through old LSDAI to the current refined implementation.
+
 ---
 
-**Note**: This documentation structure was created to provide comprehensive, organized access to all project materials. Each component is fully documented and ready for use.
+**Note**: This documentation structure provides comprehensive, organized access to all project materials. Each component is fully documented and ready for use. The actual LSDAI-Simplified implementation code is located at the repository root level, not in the Docs folder.

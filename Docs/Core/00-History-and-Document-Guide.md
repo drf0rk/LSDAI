@@ -7,13 +7,13 @@
 ```
 You are continuing work on the LSDAI project, which involves creating a simplified multi-WebUI launcher that combines the best features of the original complex LSDAI with sdAIgen's simplicity. Please read and analyze the following files in this exact order to understand the complete project context:
 
-1. First read: `/home/z/my-project/documentation/core/AI-System-Prompt.md` - Complete AI system prompt with navigation dictionary and keyword triggers
-2. Second read: `/home/z/my-project/documentation/core/00-History-and-Document-Guide.md` - This comprehensive history and guide document
-3. Third read: `/home/z/my-project/documentation/core/01-Project-Context-and-Requirements.md` - Complete project context, requirements, and framework
-4. Fourth read: `/home/z/my-project/documentation/core/02-Repository-Analysis-and-Comparison.md` - Comprehensive analysis comparing LSDAI vs sdAIgen vs simplified version
-5. Fifth read: `/home/z/my-project/documentation/core/03-Implementation-Plan-and-Architecture.md` - Detailed implementation roadmap and architecture
-6. Sixth read: `/home/z/my-project/documentation/core/04-Original-LSDAI-Notebook.py` - Original LSDAI notebook code showing the 4-cell pipeline structure
-7. Seventh read: `/home/z/my-project/documentation/core/04-Comprehensive-Evolution-Analysis.md` - Complete evolution tracing with debugging reference
+1. First read: `Docs/Core/AI-System-Prompt.md` - Complete AI system prompt with navigation dictionary and keyword triggers
+2. Second read: `Docs/Core/00-History-and-Document-Guide.md` - This comprehensive history and guide document
+3. Third read: `Docs/Core/01-Project-Context-and-Requirements.md` - Complete project context, requirements, and framework
+4. Fourth read: `Docs/Core/02-Repository-Analysis-and-Comparison.md` - Comprehensive analysis comparing LSDAI vs sdAIgen vs simplified version
+5. Fifth read: `Docs/Core/03-Implementation-Plan-and-Architecture.md` - Detailed implementation roadmap and architecture
+6. Sixth read: `Docs/Core/04-Original-LSDAI-Notebook.py` - Original LSDAI notebook code showing the 4-cell pipeline structure
+7. Seventh read: `Docs/Core/04-Comprehensive-Evolution-Analysis.md` - Complete evolution tracing with debugging reference
 
 After reading all files, provide a comprehensive summary of your understanding of the project's evolution, current status, and next steps. Focus on understanding why certain enhancements were trimmed, what the simplified version aims to achieve, how the current implementation plans address the original project's shortcomings, and how to use the debugging reference matrix when encountering issues.
 ```
@@ -103,14 +103,17 @@ Cell 1: Setup → Cell 2: Configuration → Cell 3: Download → Cell 4: Launch
 
 #### **Organized Documentation Structure:**
 ```
-documentation/
-├── core/                          # Core documentation files
+Docs/
+├── Core/                          # Core documentation files
 │   ├── 00-History-and-Document-Guide.md
 │   ├── 01-Project-Context-and-Requirements.md
 │   ├── 02-Repository-Analysis-and-Comparison.md
 │   ├── 03-Implementation-Plan-and-Architecture.md
-│   └── 04-Original-LSDAI-Notebook.py
-├── widget-builder/                 # Widget Builder system (complete)
+│   ├── 04-Original-LSDAI-Notebook.py
+│   ├── 04-Comprehensive-Evolution-Analysis.md
+│   ├── AI-System-Prompt.md
+│   └── AI-System-Prompt-Compact.md
+├── Widget-builder/                 # Widget Builder system (complete)
 │   ├── 05-Widget-Builder-Implementation-Plan.md
 │   ├── 06-Widget-Builder-Application.py
 │   ├── 06-Widget-Builder-Implementation.py
@@ -118,14 +121,13 @@ documentation/
 │   ├── 08-Widget-Builder-Examples.py
 │   ├── 08-Widget-Builder-Demo-Notebook.ipynb
 │   └── 09-Widget-Builder-Integration-Guide.md
-├── implementation/                 # Implementation files and scripts
+├── Implementation/                 # Implementation files and planning
 │   ├── rewrite-plan.md
 │   ├── next-steps-prompt.md
 │   ├── docs-analysis.md
 │   ├── TESTING_PLAN.md
 │   ├── AI-Session-Handover-Document.md
-│   └── LSDAI-Simplified/           # Complete implementation
-├── reference/                      # Original reference materials
+├── Reference/                      # Original reference materials
 │   └── lsdai_z_ai (1).py
 └── guides/                         # Additional guides and documentation
 ```
@@ -178,32 +180,32 @@ Created five different installation methods to ensure maximum compatibility:
 
 ### **Core Documentation Files**
 
-#### **1. `documentation/core/00-History-and-Document-Guide.md`**
+#### **1. `Docs/Core/00-History-and-Document-Guide.md`**
 - **Purpose**: Complete project history and document directory guide
 - **Relationship**: Master document that explains project evolution and file organization
 - **Key Content**: Project history, file relationships, usage guidelines, current status
 
-#### **2. `documentation/core/01-Project-Context-and-Requirements.md`**
+#### **2. `Docs/Core/01-Project-Context-and-Requirements.md`**
 - **Purpose**: Complete project context, requirements, and framework
 - **Relationship to Historical LSDAI**: Replaces the complex documentation structure of the original with focused, actionable requirements
 - **Key Content**: Core mission, established framework, communication requirements, user profile, critical decisions
 
-#### **3. `documentation/core/02-Repository-Analysis-and-Comparison.md`**
+#### **3. `Docs/Core/02-Repository-Analysis-and-Comparison.md`**
 - **Purpose**: Comprehensive analysis comparing LSDAI vs sdAIgen vs simplified version
 - **Relationship to Historical LSDAI**: Systematic analysis of what worked and what didn't in the original project
 - **Key Content**: Side-by-side comparisons, final verdict, recommendations for the sweet spot approach
 
-#### **4. `documentation/core/03-Implementation-Plan-and-Architecture.md`**
+#### **4. `Docs/Core/03-Implementation-Plan-and-Architecture.md`**
 - **Purpose**: Detailed implementation roadmap and architecture
 - **Relationship to Historical LSDAI**: Replaces the complex enhancement system with streamlined implementation
 - **Key Content**: New architecture, feature implementation plan, quality of life features, implementation priority
 
-#### **5. `documentation/core/04-Original-LSDAI-Notebook.py`**
+#### **5. `Docs/Core/04-Original-LSDAI-Notebook.py`**
 - **Purpose**: Original LSDAI notebook code showing the 4-cell pipeline structure
 - **Relationship to Historical LSDAI**: Direct reference to the original implementation that needed simplification
 - **Key Content**: Original 4-cell structure (Setup, Widgets, Download, Launch) with all its complexity
 
-#### **6. `documentation/core/04-Comprehensive-Evolution-Analysis.md`**
+#### **6. `Docs/Core/04-Comprehensive-Evolution-Analysis.md`**
 - **Purpose**: Complete evolution tracing from sdAIgen → old LSDAI → current LSDAI with debugging reference
 - **Relationship to Historical LSDAI**: Provides detailed analysis of code evolution and relationships between all versions
 - **Key Content**: Spiderweb mind map, pros/cons analysis, debugging cross-reference matrix, evolution patterns
@@ -211,34 +213,31 @@ Created five different installation methods to ensure maximum compatibility:
 ### **Widget Builder System (COMPLETE)**
 
 #### **Implementation Plan**
-- **`documentation/widget-builder/05-Widget-Builder-Implementation-Plan.md`**: Comprehensive technical blueprint for the Widget Builder system
+- **`Docs/Widget-builder/05-Widget-Builder-Implementation-Plan.md`**: Comprehensive technical blueprint for the Widget Builder system
 
 #### **Core Applications**
-- **`documentation/widget-builder/06-Widget-Builder-Application.py`**: Complete visual GUI creation application with Photoshop-like interface
-- **`documentation/widget-builder/06-Widget-Builder-Implementation.py`**: Core implementation modules and classes
+- **`Docs/Widget-builder/06-Widget-Builder-Application.py`**: Complete visual GUI creation application with Photoshop-like interface
+- **`Docs/Widget-builder/06-Widget-Builder-Implementation.py`**: Core implementation modules and classes
 
 #### **User and Integration Guides**
-- **`documentation/widget-builder/07-Widget-Builder-User-Guide.md`**: Complete user guide for the Widget Builder system
-- **`documentation/widget-builder/09-Widget-Builder-Integration-Guide.md`**: Integration guide for connecting with LSDAI-Simplified
+- **`Docs/Widget-builder/07-Widget-Builder-User-Guide.md`**: Complete user guide for the Widget Builder system
+- **`Docs/Widget-builder/09-Widget-Builder-Integration-Guide.md`**: Integration guide for connecting with LSDAI-Simplified
 
 #### **Examples and Demos**
-- **`documentation/widget-builder/08-Widget-Builder-Examples.py`**: Usage examples and code samples
-- **`documentation/widget-builder/08-Widget-Builder-Demo-Notebook.ipynb`**: Interactive demonstration notebook
+- **`Docs/Widget-builder/08-Widget-Builder-Examples.py`**: Usage examples and code samples
+- **`Docs/Widget-builder/08-Widget-Builder-Demo-Notebook.ipynb`**: Interactive demonstration notebook
 
 ### **Implementation Files**
 
 #### **Planning and Analysis**
-- **`documentation/implementation/rewrite-plan.md`**: Detailed rewrite plan for LSDAI simplification
-- **`documentation/implementation/docs-analysis.md`**: Comprehensive repository analysis
-- **`documentation/implementation/next-steps-prompt.md`**: Immediate next steps and execution plan
-- **`documentation/implementation/TESTING_PLAN.md`**: Comprehensive testing strategy
-- **`documentation/implementation/AI-Session-Handover-Document.md`**: Complete session context transfer
-
-#### **LSDAI-Simplified Implementation**
-- **`documentation/implementation/LSDAI-Simplified/`**: Complete working implementation with all scripts, modules, and installation methods
+- **`Docs/Implementation/rewrite-plan.md`**: Detailed rewrite plan for LSDAI simplification
+- **`Docs/Implementation/docs-analysis.md`**: Comprehensive repository analysis
+- **`Docs/Implementation/next-steps-prompt.md`**: Immediate next steps and execution plan
+- **`Docs/Implementation/TESTING_PLAN.md`**: Comprehensive testing strategy
+- **`Docs/Implementation/AI-Session-Handover-Document.md`**: Complete session context transfer
 
 ### **Reference Materials**
-- **`documentation/reference/lsdai_z_ai (1).py`**: Original LSDAI notebook for reference
+- **`Docs/Reference/lsdai_z_ai (1).py`**: Original LSDAI notebook for reference
 
 ---
 
@@ -365,23 +364,23 @@ The complete Widget Builder system includes:
 ## 📚 **Document Read Order and Usage**
 
 ### **Recommended Reading Order**
-1. **`documentation/core/00-History-and-Document-Guide.md`** (This file) - Complete project history and context
-2. **`documentation/core/01-Project-Context-and-Requirements.md`** - Detailed requirements and framework
-3. **`documentation/core/02-Repository-Analysis-and-Comparison.md`** - Comprehensive analysis and comparisons
-4. **`documentation/core/03-Implementation-Plan-and-Architecture.md`** - Implementation roadmap and architecture
-5. **`documentation/core/04-Original-LSDAI-Notebook.py`** - Original implementation reference
-6. **`documentation/core/04-Comprehensive-Evolution-Analysis.md`** - Complete evolution tracing from sdAIgen → old LSDAI → current LSDAI with debugging reference
+1. **`Docs/Core/00-History-and-Document-Guide.md`** (This file) - Complete project history and context
+2. **`Docs/Core/01-Project-Context-and-Requirements.md`** - Detailed requirements and framework
+3. **`Docs/Core/02-Repository-Analysis-and-Comparison.md`** - Comprehensive analysis and comparisons
+4. **`Docs/Core/03-Implementation-Plan-and-Architecture.md`** - Implementation roadmap and architecture
+5. **`Docs/Core/04-Original-LSDAI-Notebook.py`** - Original implementation reference
+6. **`Docs/Core/04-Comprehensive-Evolution-Analysis.md`** - Complete evolution tracing from sdAIgen → old LSDAI → current LSDAI with debugging reference
 
 ### **Widget Builder Reading Order**
-1. **`documentation/widget-builder/05-Widget-Builder-Implementation-Plan.md`** - Technical implementation blueprint
-2. **`documentation/widget-builder/07-Widget-Builder-User-Guide.md`** - Complete user guide
-3. **`documentation/widget-builder/06-Widget-Builder-Application.py`** - Main application
-4. **`documentation/widget-builder/08-Widget-Builder-Demo-Notebook.ipynb`** - Interactive demonstration
-5. **`documentation/widget-builder/09-Widget-Builder-Integration-Guide.md`** - Integration instructions
+1. **`Docs/Widget-builder/05-Widget-Builder-Implementation-Plan.md`** - Technical implementation blueprint
+2. **`Docs/Widget-builder/07-Widget-Builder-User-Guide.md`** - Complete user guide
+3. **`Docs/Widget-builder/06-Widget-Builder-Application.py`** - Main application
+4. **`Docs/Widget-builder/08-Widget-Builder-Demo-Notebook.ipynb`** - Interactive demonstration
+5. **`Docs/Widget-builder/09-Widget-Builder-Integration-Guide.md`** - Integration instructions
 
 ### **Usage Guidelines**
 - **For New Developers**: Read core documents in order to understand complete project context
-- **For Implementation**: Focus on implementation docs and LSDAI-Simplified folder
+- **For Implementation**: Focus on implementation docs and LSDAI-Simplified (located at repo root level)
 - **For Widget Creation**: Use Widget Builder documentation and applications
 - **For Testing**: Reference testing plans and implementation scripts
 - **For Documentation**: Use organized structure to find relevant materials quickly
