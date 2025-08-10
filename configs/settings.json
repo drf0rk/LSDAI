@@ -1,22 +1,22 @@
 {
-  "ENVIRONMENT": {
-    "env_name": "unknown",
-    "home_path": "/content",
-    "scr_path": "/content/LSDAI"
-  },
-  "WEBUI": {
-    "current": "Forge",
-    "arguments": "--xformers --cuda-stream"
-  },
-  "WIDGETS": {
-    "model_sd15": "CounterfeitV30_v30",
-    "model_sdxl": "sd_xl_base_1.0",
-    "vae": "sdxl_vae.safetensors",
-    "lora": "none",
-    "controlnet": "none",
-    "custom_urls": ""
-  },
-  "DOWNLOADER": {
-    "detailed_download": false
-  }
+    "ENVIRONMENT": {
+        "env_name": "unknown",
+        "home_path": "/content",
+        "scr_path": "/content/LSDAI"
+    },
+    "WEBUI": {
+        "current": "Forge",
+        "arguments": "--xformers --cuda-stream"
+    },
+    "WIDGETS": {
+        "model_sd15": "CounterfeitV30_v30",
+        "model_sdxl": "sd_xl_base_1.0",
+        "vae": "sdxl_vae.safetensors",
+        "lora": "none",
+        "controlnet": "none",
+        "custom_urls": ""
+    },
+    "DOWNLOADER": {
+        "detailed_download": false
+    }
 }

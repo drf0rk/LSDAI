@@ -22,7 +22,7 @@ def main():
 
     # 1. Load the saved WebUI settings
     print("\n[1/2] Loading WebUI configuration...")
-    webui_config = config_manager.get_setting('WEBUI')
+    webui_config = config_manager.get_section('WEBUI')
     if not webui_config:
         print("   Error: WebUI configuration not found in settings.json.")
         print("   Please run the widget cell and save settings first.")

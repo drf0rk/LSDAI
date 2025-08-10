@@ -24,7 +24,7 @@ def main():
 
     # Step 1: Load the configuration saved by the widgets
     print("\n[1/3] Loading saved widget settings...")
-    widget_config = config_manager.get_setting('WIDGETS')
+    widget_config = config_manager.get_section('WIDGETS')
     if not widget_config:
         print("   No widget settings found. Nothing to download.")
         print("==============================================")

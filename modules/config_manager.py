@@ -46,6 +46,19 @@ def get_setting(section: str, key: str, default=None):
     config = _read_config()
     return config.get(section, {}).get(key, default)
 
+def get_section(section: str) -> dict:
+    """
+    Retrieves an entire section from the config file.
+
+    Args:
+        section (str): The section of the configuration (e.g., 'WIDGETS').
+
+    Returns:
+        A dictionary of the section, or an empty dictionary if not found.
+    """
+    config = _read_config()
+    return config.get(section, {})
+
 def set_setting(section: str, key: str, value):
     """
     Sets a specific setting in a section of the config file.
