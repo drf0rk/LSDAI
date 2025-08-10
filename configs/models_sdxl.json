@@ -1,0 +1,16 @@
+{
+    "models": {
+      "sd_xl_base_1.0": {
+        "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors",
+        "type": "checkpoint",
+        "description": "Official SDXL 1.0 Base model."
+      }
+    },
+    "vaes": {
+      "sdxl_vae.safetensors": {
+          "url": "https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors",
+          "type": "vae"
+      }
+    },
+    "loras": {}
+  }

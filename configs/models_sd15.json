@@ -1,0 +1,21 @@
+{
+  "models": {
+    "CounterfeitV30_v30": {
+      "url": "https://civitai.com/api/download/models/11840",
+      "type": "checkpoint",
+      "description": "Popular anime style model."
+    }
+  },
+  "vaes": {
+    "kl-f8-anime2": {
+        "url": "https://huggingface.co/hakurei/waifu-diffusion-v1-4/resolve/main/vae/kl-f8-anime2.ckpt",
+        "type": "vae"
+    }
+  },
+  "loras": {
+      "epiNoiseoffset_v2": {
+          "url": "https://civitai.com/api/download/models/16576",
+          "type": "lora"
+      }
+  }
+}
